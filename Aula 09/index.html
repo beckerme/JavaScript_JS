@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            background-color: cornflowerblue;
+            box-sizing: border-box;
+            font: normal 24px Arial;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            color: #fff;
+        }
+
+        button{
+            border: none;
+            border-radius: 20px;
+            background-color: cornsilk;
+            padding: 10px;
+            width: 150px;
+            cursor: pointer;
+            font: normal 18px Arial;
+        }
+
+        div{
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos em DOM</h1>
+    <h2>Aqui vai o resultado: </h2>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+    <button id="oi">Clique em mim</button>
+    <div class="msg">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut suscipit dolorum cum, vero dolore expedita ea sint ab officia aperiam quo corrupti? Possimus voluptatum dolor enim quibusdam, alias excepturi quam.</div>
+
+    <script>
+        var corpo = window.document.body
+        var p1= window.document.getElementsByTagName('p')[0]
+        var r = window.document.querySelector('div.msg')
+        r.style.color = 'red'
+        var h = window.document.querySelector('button#oi')
+        h.style.background = 'blue'
+        h.style.color = 'white'
+        /*corpo.style.background = 'black'
+        p1.style.color = 'blue'*/
+
+        //document.write(p1.innerHTML)
+
+       // window.alert(p1.innerHTML)
+
+       /*var d = window.document.getElementById('msg')
+       d.style.background = 'aquamarine'
+       d.innerText = 'Estou aguardando...'
+       window.document.getElementById('msg').innerText = 'Olá'
+       d.style.margin = '10px 0 0 0'
+
+       var x = window.document.getElementsByName('msg')[0]
+       x.innerText = 'Ola'
+       
+       var g = window.document.getElementsByClassName('oi')[0]
+       g.style.background = 'aquamarine'
+       g.style.color = 'white'*/
+
+
+    </script>
+</body>
+</html>
