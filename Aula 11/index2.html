@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Immigration | Airoport</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            margin: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .principal{
+            font-size: 25px;
+        }
+
+        .principal_input{
+            height: 35px;
+        }
+
+        .button{
+            height: 35px;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        h1{
+            margin-bottom: 30px;
+        }
+
+        .group1 {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+    </style>
+</head>
+<body>
+    <main class="principal">
+        <h1>Welcome to airport 🛫</h1>
+        <div class="group1">
+            <p>Enter your nationality here:</p>
+            <input type="text" class="principal_input">
+            <button class="button" type="button">Submeter</button>
+        </div>
+        <div class="resposta" value="Verificar" onclick="validar()"></div>
+    </main>
+
+    <script src="airport.js"></script>
+</body>
+</html>
