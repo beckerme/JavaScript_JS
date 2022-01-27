@@ -4,55 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Immigration | Airoport</title>
+    <title>Document</title>
     <style>
-        *{
-            padding: 0;
-            margin: 0;
-            box-sizing: border-box;
-        }
-
         body{
-            margin: 20px;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        .principal{
-            font-size: 25px;
-        }
-
-        .principal_input{
-            height: 35px;
-        }
-
-        .button{
-            height: 35px;
-            padding: 10px;
-            cursor: pointer;
-        }
-
-        h1{
-            margin-bottom: 30px;
-        }
-
-        .group1 {
-            display: flex;
-            align-items: center;
-            gap: 10px;
+            background-color: cornsilk;
         }
     </style>
 </head>
 <body>
-    <main class="principal">
-        <h1>Welcome to airport 🛫</h1>
-        <div class="group1">
-            <p>Enter your nationality here:</p>
-            <input type="text" class="principal_input">
-            <button class="button" type="button">Submeter</button>
-        </div>
-        <div class="resposta" value="Verificar" onclick="validar()"></div>
-    </main>
+    <h1>Welcome to airport</h1>
+    <h2>Digite a sua nacionalidade:</h2>
+    <input type="text" placeholder="Digite aqui" id="nacio">
+    <input type="button" value="Submeter" onclick="validar()">
+    <div class="res"></div>
 
-    <script src="airport.js"></script>
+    <script>
+        function valida(){
+            var nacao = document.getElementById('nacio')
+            var result = document.getElementsByClassName('div.res')
+
+            if (nacao > 10){
+                result.innerHTML = 'Nativo'
+            } else {
+                result.innerHTML = 'Estrangeiro'
+            }
+        }
+    </script>
 </body>
 </html>
